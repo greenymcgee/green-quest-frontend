@@ -1,4 +1,5 @@
 import React from 'react'
+import clsx from 'clsx'
 import type { Metadata } from 'next'
 import { Libre_Baskerville, Noto_Sans_JP } from 'next/font/google'
 
@@ -27,7 +28,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${notoSansJp.variable} ${libreBaskerville.variable}`}>
+      <body
+        className={clsx(
+          notoSansJp.variable,
+          libreBaskerville.variable,
+          'bg-stars bg-cover bg-center',
+        )}
+      >
         {children}
       </body>
     </html>

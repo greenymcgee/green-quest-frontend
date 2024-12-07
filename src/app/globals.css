@@ -1,18 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import './css/spinner.module.css'; 
 
 :root {
-  --background: #fcfcff;
-  --foreground: #17181a;
+  --background: #101112;
+  --foreground: #fcfcff;
 }
 
-@media (prefers-color-scheme: dark) {
+/* For later */
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #17181a;
     --foreground: #fcfcff;
   }
-}
+} */
 
 body {
   color: var(--foreground);
@@ -31,5 +33,5 @@ h3,
 h4,
 h5,
 h6 {
-  @apply leading-heading;
+  @apply font-bold leading-heading;
 }
